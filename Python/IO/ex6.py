@@ -1,0 +1,6 @@
+a,b =input().split(' ')
+d,e,f =input().split(' ')
+g,h,i =input().split(' ')
+print(a,b)
+print(d,e,f)
+print(g,h,i)
