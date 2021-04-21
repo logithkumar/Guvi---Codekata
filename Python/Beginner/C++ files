@@ -1,0 +1,112 @@
+
+//Q17
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main(){
+    int i,n,sum=0;
+    cin>>n;
+    for(i=1;i<=n;i++){
+        sum=sum+i;
+    }
+    cout<<sum;
+    
+    return 0;
+}    
+
+//Q25
+#include<iostream>
+#include<iomanip>
+using namespace std;
+#define pi  3.1428
+int main(){
+    float r;
+    float cir;
+    cin>>r;
+    cir=2*pi*r;
+    cout<<fixed<<setprecision(2)<<cir;
+    return 0;
+}
+
+//Q26
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int y;
+    cin>>y;
+    if((y%4 == 0) && (y%100!= 0) || (y%400 == 0)){
+        cout<<"Y";
+    }
+    else{
+        cout<<"N";
+    }
+    return 0;
+}
+
+//Q27
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    int n,i,val=9,cal;
+    cin>>n;
+    for(i=1;i<=n;i++){
+        cal=val*i;
+        if(i==n){
+            cout<<cal;
+            break;
+        }
+        else{
+         cout<<cal<<" ";   
+        }
+    }
+    return 0;
+}
+
+
+//Q28
+#include<iostream>
+#include<iomanip>
+using namespace std;
+int main(){
+    float a,b;
+    cin>>a>>b;
+    if(a>b){
+        cout<<b;
+    }
+    else{
+        cout<<a;
+    }
+    return 0;
+}
+
+
+//Q29
+#include<iostream>
+#include<iomanip>
+#include<cmath>
+using namespace std;
+int main(){
+    int n,val;
+    cin>>n;
+    val=pow(n,2);
+    cout<<val;
+    return 0;
+}
+
+//Q30
+#include<iostream>
+#include<cmath>
+using namespace std;
+int main(){
+    int val=2,n,i=1,cal=0;
+    cin>>n;
+    while(cal<n){
+        cal=val*i;
+        cout<<cal<<endl;
+        i=i+1;
+    }
+    return 0;
+}
